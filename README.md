@@ -1,4 +1,4 @@
-# WebOcode
+# <a href="https://kowsik068.github.io/WebOcode/">Homey shop</a>
 front-end web competition
 
 Team Leader: KOWSIk R, 19euee068@skcet.ac.in
@@ -14,4 +14,3 @@ Theme: Home Applicants and Furniture
   This is a single page dynamically loading home applicant web page using HTML, CSS, javascript only. no webkit tools are used.
   This web application allows you to shop home applicants and give details about it.
   you can buy products using whatsapp by sending pretyped message from the website.
-  
