@@ -225,7 +225,7 @@ nav:hover #button hr:nth-child(3){
     box-shadow: unset;
 }
 
-@media (max-width: 600px){
+@media ( max-width: 600px) and (min-width: 0px) {
     #body{
         position: relative;
         top: -50px;
