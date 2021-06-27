@@ -8,6 +8,8 @@
     --place_holder: grey;
     --shadow: rgba(0, 0, 0, 0.5);
     --search: white;
+    --cback: rgb(226, 226, 226);
+    --nav_back: rgba(255, 255, 255, 0.75);
 }
 
 *{
@@ -17,6 +19,20 @@
     font-family: "Google Sans", "Helvetica Neue", sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
+
+*::-webkit-scrollbar
+    {
+        width: 3px;
+        background: transparent;
+    }
+
+*::-webkit-scrollbar-thumb
+    {
+        filter: blur(15px);
+        width: 3px;
+        background: linear-gradient(180deg,rgb(0, 255, 106),rgb(0, 162, 255));
+        border-radius: 5px;
+    }
 
 input{
     all: unset;
@@ -37,6 +53,7 @@ nav{
     transition: height .5s;
     overflow-y: hidden;
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+    z-index: 5;
 }
 
 #button{
