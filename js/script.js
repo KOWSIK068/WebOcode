@@ -24,7 +24,33 @@ function load(){
     else{
     parse_data.xml("snippets/"+pages[curr]+".html",(html)=>{
         document.querySelector("#body").innerHTML=html
+        document.querySelector("#search_icon").addEventListener("click",()=>{
+            search()
+        })
+        document.querySelector("#search").addEventListener("keypress",(event)=>{
+            if(event.code=="Enter"){
+                search()
+            }
+        })
     })}
+}
+
+function search(){
+    var s=document.querySelector("#search").value.toLowerCase()
+    Object.keys(window.json).forEach((value,index)=>{
+        if(value.toLowerCase()==s){
+            curr=index+1
+            load()
+        }
+        else{
+            Object.keys(window.json[value]).forEach((value1)=>{
+                if(value1.toLowerCase()==s){
+                    curr=index+1
+                    load()
+                }
+            })
+        }
+    })
 }
 
 var curr=0
@@ -86,5 +112,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         curr=2
         load()
         }
+    })
+    parse_data.json("snippets/content.json",(json)=>{
+        window.json=json;
     })
 })
