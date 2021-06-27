@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             root.setProperty("--mode_img","url(../img/lightmode.jpg)")
             document.querySelector("#search_icon").setAttribute("src","img/search_dark.jpg")
             document.querySelector("#mode").style.backgroundSize="100%"
-            document.getElementById("theme").setAttribute("content","black")
+            document.getElementById("theme").setAttribute("content","rgb(40, 40, 40)")
             isdark=true
         }
     })
