@@ -8,7 +8,6 @@
     --place_holder: grey;
     --shadow: rgba(0, 0, 0, 0.5);
     --search: white;
-    color: rgb(39, 39, 39);
 }
 
 *{
@@ -16,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Google Sans", "Helvetica Neue", sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 input{
@@ -117,6 +117,9 @@ input{
         font-size: 12px;
     }
     #social_media{
-        position: static;
+        position: absolute;
+        width: 70vw;
+        top: 60vh;
+        left: calc(15vw + 5px);
     }
 }
