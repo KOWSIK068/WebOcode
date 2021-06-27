@@ -61,3 +61,15 @@ nav{
     padding: 5px;
     font-family: 'Open Sans', sans-serif;
 }
+
+@media ( max-width: 600px) and (min-width: 0px) {
+    .cont{
+        width: 50%;
+    }
+    #category_name{
+        font-size: 30px;
+    }
+    #anav{
+        padding-top: 15px;
+    }
+}
